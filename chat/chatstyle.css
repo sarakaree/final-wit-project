@@ -1,0 +1,277 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  direction: ltr;
+ 
+  position: relative;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-bottom: 3px solid #860cab;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  color: #4e0073;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 30px;
+  position: relative;
+}
+
+.nav-links li a {
+  color: #4f1271;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.nav-links li:hover {
+  background-color: #f3e8fc;
+  border-radius: 5px;
+}
+
+.dropdown .caret {
+  font-size: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: #4f1271;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f3e8fc;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+}
+
+.accountimg {
+  width: 50px;
+  height: 40px;
+}
+.account a {
+  color: #4f1271;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links li a:hover,
+.account a:hover {
+  color: #4f1271;
+  background-color: #f3e8fc;
+}
+
+/* Chat Container */
+.chat-container {
+  display: flex;
+  height: 80vh;
+  margin: 20px;
+  position: relative;
+}
+
+.contacts {
+  width: 25%;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px 10px 0px 10px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.contacts input {
+  position: relative;
+  width: 98%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #d6d6d6;
+  margin-bottom: 20px;
+}
+
+.contacts ul {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+.contacts ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.contacts ul li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Chat Box */
+.chat-box {
+  width: 97%;
+  background-color: white;
+  border-radius: 10px 10px 10px 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background-color: #ffffff;
+  padding: 10px;
+  border-bottom: 1px solid #860cab;
+}
+
+.chat-header h2 {
+  margin: 0;
+}
+
+.chat-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-width: 60%;
+}
+
+.sent {
+  background-color: #cfade1;
+  margin-left: auto;
+}
+
+.received {
+  background-color: #d6d6d6;
+  margin-right: auto;
+}
+
+.chat-input {
+  border-top: 1px solid #f1efef;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-input input {
+  width: 93%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.chat-input .vg {
+  color: #cfade1;
+  width: 24px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.container {
+  height: 250px;
+  position: relative;
+  display: flex;
+  justify-content:space-evenly;
+  
+  
+  /* align-items: center; */
+  padding: 40px;
+  background-color: #ffff;
+  
+}
+
+.logo h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #4f1271;
+  margin: 0;
+}
+.links {
+  display: flex;
+  
+}
+.links h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #4f1271;
+  margin-bottom: 10px;
+}
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+.links li {
+  color: #4f1271;
+  font-size: 12px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+.social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+.simg {
+  width: 20px;
+
+}
+
+.back-to-top {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  border-radius: 10%;
+  border: white;
+  padding: 10px;
+  color: #fff;
+  
+}

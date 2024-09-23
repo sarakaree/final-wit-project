@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women in Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+     <!-- NavBar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Women in Tech</h1>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#" >Home</a></li>
+            
+            <li><a href="/group/index.html">Group</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">English <span class="caret">&#9662;</span></a>
+                <div class="dropdown-content">
+                    <a href="#">Arabic</a>
+                    <a href="#">Spanish</a>
+                    <a href="#">French</a>
+                </div>
+            </li>
+            <li><a href="#">Chat</a></li>
+            <li><a href="#">Exams</a></li>
+        </ul>
+        <div class="account">
+            <a href="#">Account</a>
+            <img src="pics/image 15.jpg" alt="Women in Tech Logo" class="accountimg">
+            
+        </div>
+    </nav>
+
+
+
+    <!-- Mentors section -->
+
+    <section class="main-content">
+        <div class="mentor-track">
+            <div class="mentor">
+                <img src="pics/maha.jpg" alt="Maha Kamal" style="width: 105px;">
+                    <div >
+                        <button class="toggleButton session-btn">digital literacy and digital transformation</button>
+                        <div class="session-details">
+                            <p>digital literacy</p>
+                            <p>digital skills</p>
+                            <p>digital transformation</p>
+                            <p>vendor managment skills</p>
+                        </div>
+                    </div>
+                    
+            </div>
+        
+            <div class="mentor">
+                <img src="pics/huda.png" alt="Huda Maytham">
+                    <div class="mentor-sessions">
+                        <button class="toggleButton session-btn">UI & UX design</button>
+                        <div class="session-details">
+                            <p>UI & UX case study</p>
+                            <p>empathy map</p>
+                            <p>design system</p>
+                        </div>
+                    </div>
+            </div>
+        
+            <div class="mentor">
+                <img src="pics/ammar.png" alt="Ammar Hani">
+    
+                    <div class="mentor-sessions">
+                        <button class="toggleButton session-btn">Web Devlopment (programming)</button>
+                        <div class="session-details">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JAVASCRIPT</p>
+                        </div>
+                    </div>
+            </div>
+    
+
+        </div>
+        <div class="large-image">
+            <img src="pics/ai.jpg" alt="" >
+        </div>
+    </section>
+
+    
+
+    
+    <footer class="container">
+        <div class="logo">
+            <h1>Women in Tech</h1>
+        </div>
+        <div class="links">
+           
+            <ul>
+                <h3>GET HELP</h3>
+                <li>Contact Us</li>
+                <li>Latest Articles</li>
+                <li>FAQ</li>
+            </ul>
+        </div>
+        <div class="links">
+            
+            <ul>
+                <h3>PROGRAMS</h3>
+                <li>Business</li>
+                <li>IT & Software</li>
+                <li>Programming</li>
+            </ul>
+        </div>
+        <div class="links">
+
+            <ul>
+                <h3>CONTACT US</h3>
+                <li>https://www.iq.zain.com</li>
+                <li>            
+                    <div class="social">
+                    <a href="#"><img src="pics/facebook-16 (1).png" alt="" class="simg"></a>
+                    <a href="#"><img src="pics/Icon.png" alt="" class="simg"></i></a>
+                    <a href="#"><img src="pics/image 14.png" alt="" class="simg"></i></a>
+                </div></li>
+            </ul>
+
+        </div>
+        <div>
+            <a href="#"><img src="pics/Frame 73.png" alt="upper" class="back-to-top"></a>
+        </div>
+    </footer>
+
+
+    <script>
+        document.querySelectorAll('.toggleButton').forEach(button => {
+        button.addEventListener('click', function() {
+            var schedule = this.nextElementSibling;
+            if (schedule.style.display === 'none' || schedule.style.display === '') {
+                schedule.style.display = 'block';
+            } else {
+                    schedule.style.display = 'none';
+                }
+            });
+        });
+        
+        // navbar dropdown
+        document.querySelector('.dropbtn').addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            this.parentElement.classList.toggle('show');
+        });
+        window.onclick = function (e) {
+        var dropdowns = document.getElementsByClassName("dropdown");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show') && !openDropdown.contains(e.target)) {
+            openDropdown.classList.remove('show'); 
+            }
+        }
+        };
+ 
+
+
+        
+    </script>
+
+</body>
+</html>

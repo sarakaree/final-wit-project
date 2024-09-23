@@ -1,0 +1,349 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #F8F7FA; */
+    padding: 10px 20px;
+    border-bottom: 3px solid #860cab;
+    background-color: #F8F7FA;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    width: 150px;
+    margin-right: 10px;
+}
+
+.logo span {
+    color: #4e0073;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+}
+
+.nav-links li {
+    margin-left: 30px;
+    position: relative;
+}
+
+.nav-links li a {
+    color: #4e0073;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #4e0073;
+    background-color: #f3e8fc;
+    
+}
+
+
+
+
+.dropdown .caret {
+    font-size: 20px;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: #4e0073;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f3e8fc;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+}
+
+.accountimg{
+    width: 50px;
+    height: 40px;
+    border-radius: 70%;
+    border: #F8F7FA;
+
+}
+.account a {
+    color: #4e0073;
+    text-decoration: none;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.account a:hover {
+    color: #4e0073;
+    background-color: #f3e8fc;
+    
+}
+
+
+
+.container {
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content:space-evenly;
+    
+    
+    /* align-items: center; */
+    padding: 40px;
+    background-color: #ffff;
+    
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+} */
+ .logo img {
+    margin-right: 10px;
+} 
+.logo h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #5e2485;
+    margin: 0;
+}
+.links {
+    display: flex;
+    
+}
+.links h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #5e2485;
+    margin-bottom: 10px;
+}
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+.links li {
+    color: #5e2485;
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+.social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.simg {
+    width: 20px;
+
+}
+
+.back-to-top {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    border-radius: 10%;
+    border: white;
+    padding: 10px;
+    color: #fff;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to  bottom right, rgb(126, 52, 200),rgb(148, 48, 157));
+    color: white;
+}
+.login-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    min-height: 80vh;
+
+}
+
+.login-form {
+    width: 50%;
+}
+
+.login-form h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+
+}
+
+.google-login {
+    background-color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    
+}
+
+.input-group {
+    margin-top: 20px; 
+    position: relative;
+}
+
+.input-group input {
+    width: 65%;
+    height: 50px;
+    padding: 10px 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: initial;
+    outline: none;
+}
+::-webkit-input-placeholder{
+    color: white;
+}
+
+.input-group i {
+    position: absolute;
+    left: 440px;
+    top: 15px;
+    color:white;
+}
+
+/* .remember-me {
+    display: flex;
+    
+    align-items: center;
+    margin-bottom: 20px;
+} */
+.remember-me input {
+    margin-right: 5px; 
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.remember-me a {
+    margin-left: 185px;
+    margin-bottom: 30px; 
+    margin-top: 20px;
+    color: white;
+}
+
+button[type="submit"] {
+    padding: 10px 10px;
+    background-color:white;
+    color: #4F1271;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 466px;
+    height: 50px;
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.image-container {
+    width: 60%;
+    position: fixed;
+    bottom: 1px;
+    right: 10px; 
+    left: 700px;
+   
+  }
+  
+  .image-container img {
+    max-width: 80%;
+ }
+  
+
+
+p{
+   margin-left:100px;
+   margin-top: 20px;
+}
+.google-login{
+    width: 466px;
+    height:50px;
+    color: #783F8E;
+    font-size: 20px;
+    
+}
+.google-icon{
+    margin-right: 80px;
+    width: 30px;
+    height: 30px;
+    margin-left:10px;
+}
+.p2chang {
+    text-align: center; /* توسيط النص */
+    position: relative; /* لإضافة الخطوط */
+    margin: 20px 250px 0 0; /* المسافة بين الفقرة والخطوط */
+}
+
+.p2chang::before,
+.p2chang::after {
+    content: ""; /* إنشاء عنصر فارغ */
+    position: absolute; /* لتحديد موقع الخطوط */
+    top: 50%; /* توسيط الخط عمودياً */
+    /* width: 31%; عرض الخط */
+    height: 1px; /* سمك الخط */
+    background-color:white; /* لون الخط */
+}
+
+.p2chang::before {
+    left: 0; 
+    margin-right: 10px;
+    width:31%; 
+}
+
+.p2chang::after {
+    right: 0; /* موضع الخط الأيمن */
+    margin-left: 10px;
+    width:32%; /* مسافة بين الخط والنص */
+}
+
+.lin{
+    color: white;
+}
+hr{
+    width: 466px;
+}
