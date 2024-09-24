@@ -33,7 +33,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
+    background-color: #F8F7FA;
     padding: 10px 20px;
     border-bottom: 3px solid #860cab;
 }

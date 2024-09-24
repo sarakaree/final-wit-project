@@ -4,7 +4,6 @@ body {
   margin: 0;
   padding: 0;
   direction: ltr;
- 
   position: relative;
 }
 
@@ -13,7 +12,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: white;
+  background-color: #F8F7FA;
   border-bottom: 3px solid #860cab;
 }
 
