@@ -23,8 +23,7 @@
                 <a href="#" class="dropbtn">English <span class="caret">&#9662;</span></a>
                 <div class="dropdown-content">
                     <a href="#">Arabic</a>
-                    <a href="#">Spanish</a>
-                    <a href="#">French</a>
+                    <a href="#">Kurdish</a>
                 </div>
             </li>
             <!-- <li><a href="">Chat</a></li>
@@ -72,57 +71,63 @@
 
     <!-- Card Section -->
     <section class="card-container">
-        <div class="card">
+        <div class="card" onclick="playVideo()">
             <img src="pics/g5.png" alt="Card Image">
             <div class="card-content">
                 <h>GROUP A</h>
                 <p class="date"><img src="calendar-icon.png" alt="calendar"> Jan 24, 2023</p>
                 <p>Looking for an amazing & well-functional Legccudjmdjd jdkdo arnPress WordPress Theme?... </p>
+                <div class="hover-message">Show group details</div>
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" onclick="playVideo()">
             <img src="pics/g1.png" alt="Card Image">
             <div class="card-content">
                 <h>GROUP B</h>
                 <p class="date"><img src="calendar-icon.png" alt="calendar"> Jan 24, 2023</p>
                 <p>Looking for an amazing & well-functional LearnPress WordPress Theme?... </p>
+                <div class="hover-message">Show group details</div>
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" onclick="playVideo()">
             <img src="pics/g2.png" alt="Card Image">
             <div class="card-content">
                 <h>GROUP C </h>
                 <p class="date"><img src="calendar-icon.png" alt="calendar"> Jan 24, 2023</p>
                 <p>Looking for an amazing & well-functional LearnPress WordPress Theme?... </p>
+                <div class="hover-message">Show group details</div>
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" onclick="playVideo()">
             <img src="pics/g3.png" alt="Card Image">
             <div class="card-content">
                 <h>GROUP D </h>
                 <p class="date"><img src="calendar-icon.png" alt="calendar"> Jan 24, 2023</p>
                 <p>Looking for an amazing & well-functional LearnPress WordPress Theme?... </p>
+                <div class="hover-message">Show group details</div>
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" onclick="playVideo()">
             <img src="pics/g4.png" alt="Card Image">
             <div class="card-content">
                 <h>GROUP E </h>
                 <p class="date"><img src="calendar-icon.png" alt="calendar"> Jan 24, 2023</p>
                 <p>Looking for an amazing & well-functional LearnPress WordPress Theme?... </p>
+                <div class="hover-message">Show group details</div>
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" onclick="playVideo()">
             <img src="pics/g5.png" alt="Card Image">
             <div class="card-content">
                 <h>GROUP F</h>
                 <p class="date"><img src="calendar-icon.png" alt="calendar"> Jan 24, 2023</p>
                 <p>Looking for an amazing & well-functional LearnPress WordPress Theme?... </p>
+                <div class="hover-message">Show group details</div>
             </div>
         </div>
     </section>
@@ -270,19 +275,30 @@
         //handling card clicks and video display
         const cards = document.querySelectorAll('.card');
         const mentorTrackSection = document.getElementById('mentors-track');
-        const heroVideo = document.getElementById('hero-video');
+        //const heroVideo = document.getElementById('hero-video');
         const carouselContainer = document.getElementById('carousel-container');
 
         cards.forEach(card => {
             card.addEventListener('click', () => {
                 mentorTrackSection.style.display = 'block';
                 carouselContainer.style.display = 'none';
-                heroVideo.style.display = 'block';
-                heroVideo.play().catch(error => {
-                    console.error('Autoplay was prevented:', error);
-                });
+                // heroVideo.style.display = 'block';
+                // heroVideo.play().catch(error => {
+                //     console.error('Autoplay was prevented:', error);
+                // });
             });
         });
+
+
+        function playVideo() {
+            const video = document.getElementById("hero-video");
+            video.style.display = "block";  // Show the video
+            video.play();  // Start playing the video
+
+            // Scroll to the video section
+            video.scrollIntoView({ behavior: 'smooth' });
+        }
+
 
 
 

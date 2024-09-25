@@ -9,55 +9,67 @@ body {
   }
   
   .navbar {
-    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #F8F7FA;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     border-bottom: 3px solid #860cab;
-  }
-  
-  .logo {
+    background-color: #F8F7FA;
+}
+
+.logo h1 {
     display: flex;
     align-items: center;
-  }
-  
-  .logo span {
+}
+
+
+.logo img {
+    height: 40px;
+    width: 150px;
+    margin-right: 10px;
+}
+
+.logo span {
     color: #4e0073;
     font-size: 18px;
     font-weight: bold;
-  }
-  
-  .nav-links {
+}
+
+.nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
-  }
-  
-  .nav-links li {
+    
+}
+
+.nav-links li {
     margin-left: 30px;
     position: relative;
-  }
-  
-  .nav-links li a {
-    color: #4f1271;
+}
+
+.nav-links li a {
+    color: #4e0073;
     text-decoration: none;
     padding: 10px;
     font-size: 16px;
-  }
-  
-  .nav-links li:hover {
+}
+
+.nav-links a:hover {
+    color: #4e0073;
     background-color: #f3e8fc;
-    border-radius: 5px;
-  }
-  
-  .dropdown .caret {
+    
+}
+
+
+
+
+.dropdown .caret {
     font-size: 20px;
-  }
-  
-  .dropdown-content {
+    
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     top: 40px;
@@ -67,44 +79,42 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1;
     border-radius: 5px;
-  }
-  
-  .dropdown-content a {
-    color: #4f1271;
+}
+
+.dropdown-content a {
+    color: #4e0073;
     padding: 10px;
     text-decoration: none;
     display: block;
     font-size: 14px;
-  }
-  
-  .dropdown-content a:hover {
+}
+
+.dropdown-content a:hover {
     background-color: #f3e8fc;
-  }
-  
-  .dropdown:hover .dropdown-content {
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
-  }
-  
-  .account {
+}
+
+.account {
     display: flex;
     align-items: center;
-  }
-  
-  .accountimg {
+}
+
+.accountimg{
     width: 50px;
     height: 40px;
-  }
-  .account a {
-    color: #4f1271;
+    border-radius: 70%;
+    border: #F8F7FA;
+
+}
+.account a {
+    color: #4e0073;
     text-decoration: none;
+    padding: 3px;
     font-size: 16px;
-  }
-  
-  .nav-links li a:hover,
-  .account a:hover {
-    color: #4f1271;
-    background-color: #f3e8fc;
-  }
+}
   
 
 .exams-section {
@@ -184,7 +194,7 @@ body {
 }
 
 .logo h1 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   color: #4f1271;
   margin: 0;

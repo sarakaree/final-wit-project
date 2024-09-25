@@ -208,6 +208,7 @@ body {
 
 /* cart  */
 
+
 .card-container {
     display: grid;
     /* padding: 40px; */
@@ -218,19 +219,61 @@ body {
    
 }
 
+
+
+
 .card {
+    position: relative;
+    cursor: pointer;
     background-color: white;
     border-radius: 15px ;
     border:1px double #8a3bc7;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 300px;
     overflow: hidden;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease;
 }
 
-.card:hover {
+/* .card:hover {
     transform: translateY(-10px);
+} */
+
+.card:hover {
+    transform: scale(1.05);
 }
+
+
+/* Full Card Hover Message */
+.hover-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(165, 98, 206, 0.6);
+    color: #fff;
+    font-size: 18px;
+    font-weight:lighter;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show Hover Message on Card Hover */
+.card:hover .hover-message {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
 
 .card img {
     width: 100%;
