@@ -22,7 +22,7 @@ body {
   justify-content: space-around;
   align-items: center;
   border-bottom: 3px solid #6b2192;
-  background-color: #F8F7FA;
+  background-color: white;
 }
 
 .logo h1 {
@@ -118,7 +118,7 @@ body {
 .account a {
   color: #4e0073;
   text-decoration: none;
-  padding: 3px;
+  padding: 10px;
   font-size: 16px;
 }
 
