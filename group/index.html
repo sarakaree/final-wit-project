@@ -10,22 +10,20 @@
 <body>
 
      <!-- NavBar -->
-    <nav class="navbar">
+     <nav class="navbar">
         <div class="logo">
             <h1>Women in Tech</h1>
         </div>
 
         <ul class="nav-links">
-            <li><a href="#" >Home</a></li>
-            
-            <li><a href="index.html">Group</a></li>
-            <li><a href="../chat/chat.html">Chat</a></li>
-            <li><a href="../score/score.html">Tasks</a></li>
-            <li><a href="../play/h.html">Certificate</a></li>
+            <li><a href="#home-content" onclick="highlight('home-content')">Home</a></li>
+            <li><a href="../group/index.html" onclick="highlight('group-content')">Group</a></li>
+            <li><a href="../chat/chat.html" onclick="highlight('chat-content')">Chat</a></li>
+            <li><a href="../score/score.html" onclick="highlight('tasks-content')">Tasks</a></li>
+            <li><a href="../play/h.html" onclick="highlight('certificate-content')">Certificate</a></li>
             <li class="dropdown">
                 <a href="#" class="dropbtn">English <span class="caret">&#9662;</span></a>
                 <div class="dropdown-content">
-                    
                     <a href="#">Arabic</a>
                     <a href="#">Kurdish</a>
                 </div>
@@ -33,10 +31,17 @@
         </ul>
         <div class="account">
             <a href="../account/account.html">Hi Maha!</a>
-            <img src="pics/image 15.jpg" alt="Women in Tech Logo" class="accountimg">
-            
+            <img src="../pics/image 15.jpg" alt="Women in Tech Logo" class="accountimg">
         </div>
     </nav>
+
+    <div id="content">
+        <p id="home-content" class="content-item">Home</p>
+        <p id="group-content" class="content-item">Group</p>
+        <p id="chat-content" class="content-item">Chat</p>
+        <p id="tasks-content" class="content-item">Tasks</p>
+        <p id="certificate-content" class="content-item">Certificate</p>
+    </div>
 
 
 
@@ -47,12 +52,14 @@
             <div class="mentor">
                 <img src="pics/maha.jpg" alt="Maha Kamal" style="width: 105px;">
                     <div >
-                        <button class="toggleButton session-btn" onclick="window.location.href='../PRU/index.html';">digital literacy and digital transformation</button>
+                        <button class="toggleButton session-btn">digital literacy and digital transformation</button>
                         <div class="session-details">
-                            <p>digital literacy</p>
-                            <p>digital skills</p>
-                            <p>digital transformation</p>
-                            <p>vendor managment skills</p>
+                            <ul class="list">
+                                <li><a href="../PRU/index.html">Digital literacy</a></li>
+                                <li><a href="../PRU/index.html">Digital skills</a></li>
+                                <li><a href="../PRU/index.html">Digital transformation</a></li>
+                                <li><a href="../PRU/index.html">Vendor management skills</a></li>
+                            </ul>
                         </div>
                     </div>
                     
@@ -61,11 +68,12 @@
             <div class="mentor">
                 <img src="pics/huda.png" alt="Huda Maytham">
                     <div class="mentor-sessions">
-                        <button class="toggleButton session-btn" onclick="window.location.href='../PRU/index.html';">UI & UX design</button>
+                        <button class="toggleButton session-btn">UI & UX design</button>
                         <div class="session-details">
-                            <p>UI & UX case study</p>
-                            <p>empathy map</p>
-                            <p>design system</p>
+                            <ul class="list">
+                                <li><a href="../PRU/index.html">UI & UX case study</a></li>
+                                <li><a href="../PRU/index.html">Empathy map</a></li>
+                                <li><a href="../PRU/index.html">Design system</a></li>
                         </div>
                     </div>
             </div>
@@ -74,11 +82,12 @@
                 <img src="pics/ammar.png" alt="Ammar Hani">
     
                     <div class="mentor-sessions">
-                        <button class="toggleButton session-btn" onclick="window.location.href='../PRU/index.html';">Web Devlopment (programming)</button>
+                        <button class="toggleButton session-btn">Web Devlopment (programming)</button>
                         <div class="session-details">
-                            <p>HTML</p>
-                            <p>CSS</p>
-                            <p>JAVASCRIPT</p>
+                            <ul class="list">
+                                <li><a href="../PRU/index.html">HTML</a></li>
+                                <li><a href="../PRU/index.html">CSS</a></li>
+                                <li><a href="../PRU/index.html">JavaScript</a></li>
                         </div>
                     </div>
             </div>
@@ -162,6 +171,23 @@
             }
         }
         };
+
+
+
+        function setActiveLink() {
+            const currentPath = window.location.pathname.split("/").pop(); 
+            const navLinks = document.querySelectorAll('.nav-links a, .account a');
+
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute('href').split("/").pop();
+                if (linkPath === currentPath) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active'); 
+                }
+            });
+        }
+    document.addEventListener('DOMContentLoaded', setActiveLink);
  
 
 

@@ -8,35 +8,44 @@
 
     <link rel="stylesheet" href="loginin.css">
 </head>
-<nav class="navbar">
-    <div class="logo">
-        <img src="image/WhatsApp Image 2024-09-18 at 06.22.56_c4b5c374.jpg" alt="Women in Tech Logo">
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Women in Tech</h1>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home-content" onclick="highlight('home-content')">Home</a></li>
+            <!-- <li><a href="#group-conten" onclick="highlight('group-conten', '#group-conten')">Group</a></li>
+            <li><a href="../chat/chat.html" onclick="highlight(null, '../chat/chat.html')">Chat</a></li>
+            <li><a href="../score/score.html" onclick="highlight(null, '../score/score.html')">Tasks</a></li>
+            <li><a href="../play/h.html" onclick="highlight(null, '../play/h.html')">Certificate</a></li> -->
+            <li class="dropdown">
+                <a href="#" class="dropbtn">English <span class="caret">&#9662;</span></a>
+                <div class="dropdown-content">
+                    <a href="#">Arabic</a>
+                    <a href="#">Kurdish</a>
+                </div>
+            </li>
+        </ul>
+        <div class="account">
+            <a href="../login signup/sign.html" onclick="highlight(null, '../login signup/sign.html')">Sign up/</a>
+            <a href="../login signup/login.html" onclick="highlight(null, '../login signup/login.html')">Log in</a>
+            <img src="../pics/image 15.jpg" alt="Women in Tech Logo" class="accountimg">
+        </div>
+    </nav>
+
+    <div id="content">
+        <p id="home-content" class="content-item">Home</p>
+        <!-- <p id="group-content" class="content-item">Group</p>
+        <p id="chat-content" class="content-item">Chat</p>
+        <p id="tasks-content" class="content-item">Tasks</p>
+        <p id="certificate-content" class="content-item">Certificate</p> -->
     </div>
 
-    <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Courses</a></li>
-        <!-- <li><a href="#">Group</a></li> -->
-        <li class="dropdown">
-            <a href="#" class="dropbtn">English <span class="caret">&#9662;</span></a>
-            <div class="dropdown-content">
-                
-                <a href="#">Arabic</a>
-                <a href="#">Kurdish</a>
-            </div>
-        </li>
-        <!-- <li><a href="#">Chat</a></li>
-        <li><a href="#">Exams</a></li> -->
-    </ul>
-    <div class="account">
-        
-        <a href="sign.html">Sign up/</a>
-        <a href="login.html">Log in</a>
-        <img src="image/image 15.jpg" alt="Women in Tech Logo" class="accountimg">
-        
-    </div>
-</nav>
-<body>
+
     <section class="login-section">
         <div class="login-form">
             <h2>Login to WIT</h2>
@@ -60,7 +69,11 @@
                        
                 </div>
                
+
+
                 <button type="submit" onclick="window.location.href='../index.html';">Log In</button>
+
+
 
             </form>
             <br>
@@ -74,6 +87,40 @@
 
     </section>
     </div>
+
+    <script>
+        document.querySelector('.dropbtn').addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            this.parentElement.classList.toggle('show');
+        });
+        window.onclick = function (e) {
+        var dropdowns = document.getElementsByClassName("dropdown");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show') && !openDropdown.contains(e.target)) {
+            openDropdown.classList.remove('show'); 
+            }
+        }
+        };
+
+
+
+        function setActiveLink() {
+            const currentPath = window.location.pathname.split("/").pop(); 
+            const navLinks = document.querySelectorAll('.nav-links a, .account a');
+
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute('href').split("/").pop();
+                if (linkPath === currentPath) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active'); 
+                }
+            });
+        }
+    document.addEventListener('DOMContentLoaded', setActiveLink);
+    </script>
 </body>
 <footer class="container">
     <div class="logo">
@@ -115,4 +162,5 @@
         <a href="#"><img src="image/Frame 73.png" alt="upper" class="back-to-top"></a>
     </div>
 </footer>
+
 </html>

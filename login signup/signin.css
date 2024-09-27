@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10px 20px;
   border-bottom: 3px solid #860cab;
 }
 
@@ -292,10 +291,11 @@
     font-size: 16px;
   }
   
-  .nav-links li a:hover,
-  .account a:hover {
-    color: #4e0073;
-    background-color: #f3e8fc;
+  .nav-links a:hover, .nav-links a.active, 
+  .account a:hover, .account a.active {
+      color: #6b2192;
+      background-color: #efe4fc;
+      font-weight: bold;
   }
   
   /* Container Styles */

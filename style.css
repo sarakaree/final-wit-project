@@ -16,110 +16,126 @@ body {
 
 
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 20px;
-    border-bottom: 3px solid #860cab;
-    background-color: #F8F7FA;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 3px solid #6b2192;
+  background-color: #F8F7FA;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
+.logo h1 {
+  display: flex;
+  align-items: center;
+  color: #6b2192;
 }
 
 .logo img {
-    height: 40px;
-    width: 150px;
-    margin-right: 10px;
+  height: 40px;
+  width: 150px;
+  margin-right: 10px;
 }
 
 .logo span {
-    color: #4e0073;
-    font-size: 18px;
-    font-weight: bold;
+  color: #6b2192;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    
+  cursor: pointer;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
 }
 
 .nav-links li {
-    margin-left: 30px;
-    position: relative;
+  margin-left: 30px;
+  position: relative;
 }
 
 .nav-links li a {
-    color: #4e0073;
-    text-decoration: none;
-    padding: 10px;
-    font-size: 16px;
+  color: #6b2192;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 16px;
 }
 
-.nav-links a:hover {
-    color: #4e0073;
-    background-color: #f3e8fc;
-    
+.nav-links a:hover, .nav-links a.active, 
+.account a:hover, .account a.active {
+    color: #6b2192;
+    background-color: #efe4fc;
+    font-weight: bold;
 }
-
-
-
 
 .dropdown .caret {
-    font-size: 20px;
-    
+  font-size: 20px;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    background-color: #fff;
-    min-width: 160px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-    border-radius: 5px;
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0 4px 8px #6b2192;
+  z-index: 1;
+  border-radius: 5px;
 }
 
 .dropdown-content a {
-    color: #4e0073;
-    padding: 10px;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
+  color: #6b2192;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
 }
 
 .dropdown-content a:hover {
-    background-color: #f3e8fc;
+  background-color: #f3e8fc;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 .account {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.accountimg{
-    width: 50px;
-    height: 40px;
-    border-radius: 70%;
-    border: #F8F7FA;
-
+.accountimg {
+  width: 50px;
+  height: 40px;
+  border-radius: 70%;
+  border: #F8F7FA;
 }
+
 .account a {
-    color: #4e0073;
-    text-decoration: none;
-    padding: 3px;
-    font-size: 16px;
+  color: #4e0073;
+  text-decoration: none;
+  padding: 3px;
+  font-size: 16px;
+}
+
+#content {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-item {
+  display: none;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.show {
+  display: block;
 }
 
 
@@ -265,14 +281,6 @@ body {
 .card:hover .hover-message {
     opacity: 1;
 }
-
-
-
-
-
-
-
-
 
 
 .card img {

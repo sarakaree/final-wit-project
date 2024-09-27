@@ -8,27 +8,35 @@ body {
 }
 
 .navbar {
-  position: relative;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 3px solid #6b2192;
   background-color: #F8F7FA;
-  border-bottom: 3px solid #860cab;
 }
 
-
-.logo {
+.logo h1 {
   display: flex;
   align-items: center;
+  color: #6b2192;
+}
+
+.logo img {
+  height: 40px;
+  width: 150px;
+  margin-right: 10px;
 }
 
 .logo span {
-  color: #4e0073;
+  color: #6b2192;
   font-size: 18px;
   font-weight: bold;
 }
 
 .nav-links {
+  cursor: pointer;
+  float: left;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,15 +49,17 @@ body {
 }
 
 .nav-links li a {
-  color: #4f1271;
+  color: #6b2192;
   text-decoration: none;
   padding: 10px;
   font-size: 16px;
 }
 
-.nav-links li:hover {
-  background-color: #f3e8fc;
-  border-radius: 5px;
+.nav-links a:hover, .nav-links a.active, 
+.account a:hover, .account a.active {
+    color: #6b2192;
+    background-color: #efe4fc;
+    font-weight: bold;
 }
 
 .dropdown .caret {
@@ -63,13 +73,13 @@ body {
   left: 0;
   background-color: #fff;
   min-width: 160px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px #6b2192;
   z-index: 1;
   border-radius: 5px;
 }
 
 .dropdown-content a {
-  color: #4f1271;
+  color: #6b2192;
   padding: 10px;
   text-decoration: none;
   display: block;
@@ -92,18 +102,34 @@ body {
 .accountimg {
   width: 50px;
   height: 40px;
+  border-radius: 70%;
+  border: #F8F7FA;
 }
+
 .account a {
-  color: #4f1271;
+  color: #4e0073;
   text-decoration: none;
+  padding: 3px;
   font-size: 16px;
 }
 
-.nav-links li a:hover,
-.account a:hover {
-  color: #4f1271;
-  background-color: #f3e8fc;
+#content {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.content-item {
+  display: none;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.show {
+  display: block;
+}
+
 
 /* Chat Container */
 .chat-container {
