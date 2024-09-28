@@ -15,7 +15,7 @@ body {
     align-items: center;
     border-bottom: 5px solid #6b2192;
     background-color: white;
-    padding-top: 5px;
+    height: 50px;
   }
   
   .logo h1 {
@@ -26,7 +26,7 @@ body {
   
   .logo img {
     height: 40px;
-    width: 150px;
+    width: 190px;
     margin-right: 10px;
   }
   
@@ -60,6 +60,8 @@ body {
   .nav-links a:hover, .nav-links a.active, 
   .account a:hover, .account a.active {
       color: #6b2192;
+      display: flex;
+      line-height: 30px;
       background-color: #efe4fc;
       /* font-weight: bold; */
   }
