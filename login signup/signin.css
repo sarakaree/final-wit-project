@@ -295,7 +295,7 @@
   .account a:hover, .account a.active {
       color: #6b2192;
       background-color: #efe4fc;
-      font-weight: bold;
+      /* font-weight: bold; */
   }
   
   /* Container Styles */

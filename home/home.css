@@ -31,8 +31,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 3px solid #6b2192;
+  border-bottom: 5px solid #6b2192;
   background-color:white;
+  padding: 10px;
 }
 
 .logo h1 {
@@ -78,7 +79,7 @@
 .account a:hover, .account a.active {
     color: #6b2192;
     background-color: #efe4fc;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .dropdown .caret {
@@ -128,7 +129,7 @@
 .account a {
   color: #4e0073;
   text-decoration: none;
-  padding: 10px;
+  padding: 6px;
   font-size: 16px;
 }
 

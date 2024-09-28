@@ -87,6 +87,7 @@ h1 span {
     align-items: center;
     border-bottom: 3px solid #6b2192;
     background-color: white;
+    padding-top: 5px;
   }
   
   .logo h1 {
@@ -132,7 +133,7 @@ h1 span {
   .account a:hover, .account a.active {
       color: #6b2192;
       background-color: #efe4fc;
-      font-weight: bold;
+      /* font-weight: bold; */
   }
 
   
