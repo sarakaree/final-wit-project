@@ -69,8 +69,9 @@ body {
 .account a:hover, .account a.active {
     color: #6b2192;
     display: flex;
-    line-height: 29px;
+    line-height: 28px;
     background-color: #efe4fc;
+    /* z-index: 1; */
     /* font-weight: bold; */
 }
 
