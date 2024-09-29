@@ -2,9 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    --main-text-color: #4F1271;
+    --main-buttom-redus: 20px;
+    --main-line-hieght: 30px;
+    --main-margine-bottom: 50px;
+    --button-width: 150px;
+    --p-color: #655F68;
+    font-family: Arial, sans-serif;
     font-family: Arial, sans-serif;
 }
+
 
 body {
     background-color: white;
